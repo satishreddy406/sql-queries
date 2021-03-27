@@ -26,6 +26,18 @@ select * from  employeedb where name like 'd%';
 delete from employeedb;
 
 delete from employeedb where name='nsd';
+delete from employeedb where name !='nsd';
+delete from employeedb where name >'nsd';
+delete from employeedb where name <'nsd';
+delete from employeedb where name >='nsd';
+delete from employeedb where name <='nsd';
 show tables;
 update employeedb set name = 'nitisha' where id =4;
+update employeedb set name = 'dsn' where id !=4;
 
+update employeedb set name = 'qwe' where id >2;
+update employeedb set name = 'neetu' where id<2;
+update employeedb set name = 'madhavi' where id>=2;
+update employeedb set name = 'madhavi' where id>=2;
+update employeedb set name = 'madhavi' where id>=2;
+update employeedb set name = 'madhavi' where id>=2;
