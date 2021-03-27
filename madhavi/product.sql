@@ -1,0 +1,11 @@
+show databases;
+create database productdb;
+use productdb;
+drop database productdb;
+create table product(productid int(5),prodname varchar(25),prodprice int(10),proddes varchar(50));
+describe product;
+insert into product(productid ,prodname ,prodprice ,proddes ) values(111, 'ipad ', 450000, '2nd genation');
+insert into product(productid ,prodname ,prodprice ,proddes ) values(112, 'sony', 350000, 'sony laptop');
+insert into product(productid ,prodname ,prodprice ,proddes ) values(113, 'lenovo ', 750000, 'lenovo laptop');
+insert into product(productid ,prodname ,prodprice ,proddes ) values(114, 'dell ', 850000, 'dell laptop');
+select * from product;
