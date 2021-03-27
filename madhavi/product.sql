@@ -30,10 +30,10 @@ update product set prodname='tap' where productid>111;
 update product set prodname='tap' where productid<111;
 update product set prodname='popo' where productid!=111;
 select * from product;
-
 delete from product;
 delete from product where productid=114;
-
-
+delete from product where productid<113;
+delete from product where productid<=114;
+delete from product where productid>111;
 select * from product where prodname like 'l%';
 select * from product;
