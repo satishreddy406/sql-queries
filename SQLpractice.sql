@@ -22,6 +22,7 @@ delete from Patient where middle_name ='joshi';
 delete from Patient where id = 1;
 delete from Patient where id = 2 AND first_name = 'Srikanth';
 delete from Patient where id = 2 OR first_name = 'Srikanth';
+delete from Patient where id !=2;
 
 delete from Patient where id =2 AND first_name ='Srikanth' OR last_name = 'N';
 
