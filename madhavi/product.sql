@@ -22,8 +22,18 @@ select * from product where  productid=111 OR productid=113;
 select * from product where  productid=113 and (prodprice=850000 or prodprice= 350000);
 select * from product where  not prodname='sony';
 select * from product where  prodname IN ('ipad','lenovo');
-update product set prodname='ups' where productid=111;
+update product set prodname='ups' where productid>=111;
+update product set prodname='maddy' where productid<=112;
+update product set prodname='lionk' where productid=113;
+update product set prodname='uks' where productid<111;
+update product set prodname='tap' where productid>111;
+update product set prodname='tap' where productid<111;
+update product set prodname='popo' where productid!=111;
+select * from product;
+
 delete from product;
 delete from product where productid=114;
+
+
 select * from product where prodname like 'l%';
 select * from product;
