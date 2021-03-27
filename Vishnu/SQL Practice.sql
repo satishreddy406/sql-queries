@@ -28,3 +28,7 @@ select * from customers where id >=2;
 select * from customers where id >2;
 select * from customers where id <2;
 
+update customers set first_name = 'sri' where last_name like '%y';
+update customers set first_name = 'sri' where id >=3;
+delete from customers where id!=2;
+
